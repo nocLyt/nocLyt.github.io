@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>mooc-ntu-deeplearning</title>
+  <meta name="author" content="nocLyt">
+   <meta name="description" content="代码 文学">
+  
+
+  <meta property="og:title" content="mooc-ntu-deeplearning"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="笔良文昌"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;笔为良，则文者昌
+      </div>
+    </div>
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        mooc-ntu-deeplearning
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      
+<time datetime="2015-02-14T14:19:00.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  Feb 14 2015
+</time>
+
+
+
+
+
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h1 id="神经网络的关键问题"><a href="#神经网络的关键问题" class="headerlink" title="神经网络的关键问题"></a>神经网络的关键问题</h1><ul>
+<li><p>网络结构</p>
+<p>  <strong>具体问题具体分析</strong></p>
+<p>  例如：数字图像处理中得Convolutional NNet(卷积神经网络)是把相邻的像素<em>相关联</em>，距离远的则<em>无关联</em>。</p>
+</li>
+<li><p>高模型复杂度</p>
+<p>  <strong>Regularization(正则化)</strong></p>
+<ol>
+<li>Dropout      </li>
+<li>Denoising（目的使NN面对含有一点noise的输入也能输出正确结果）</li>
+</ol>
+</li>
+<li><p>难以得到最优解</p>
+<ul>
+<li>谨慎的初始化可以避免陷入局部最优解。例如：Pre-Training</li>
+</ul>
+</li>
+<li><p>计算复杂度大</p>
+<p>  GPU计算</p>
+</li>
+</ul>
+<p>最关键的点：<strong>Regularization</strong>和<strong>Initialization</strong>。</p>
+<h1 id="Autoencoder"><a href="#Autoencoder" class="headerlink" title="Autoencoder"></a>Autoencoder</h1><p>把权重（weights）看做特征转换。那么一个好的权重（good-weights）就意味着能提取输入向量的关键特征。那么样的话，我们甚至可以通过关键特征重新拼凑出最初的输入向量。而我们正是需要这样的 good-weights ！</p>
+<p>考虑只有一层隐层的神经网络，且输入和输出层都是 $d$ 维，隐层是 $ \tilde{d} $。如下图</p>
+<p><img src="http://noclyt.qiniudn.com/IPNNet.png" alt="ip-nnet"></p>
+<p>$w_{ij}^{(1)}$: encoding weights.  $w_{ij}^{(1)}$:decoding weights. 目标函数 $ g(\mathbf{x}) \approx \mathbf{x}$ </p>
+<p>我们称这样的神经网络是 <strong>Information-Preserving Neural Network</strong></p>
+<p>性质：</p>
+<ul>
+<li><strong>一般来说有 $ tilde{d} &lt; d</strong> </li>
+<li><strong>限制 $ w_{ij}^{(1)} = w_{ji}^{(2)}$ </strong> ，作为一种 Regularization（正则化）方式。</li>
+<li>…</li>
+</ul>
+<h1 id="Pre-Trainning"><a href="#Pre-Trainning" class="headerlink" title="Pre-Trainning"></a>Pre-Trainning</h1><p>前面说过，权重初始化影响着最终解陷入局部最优解，可以通过 Pre-Trainning 减少这种影响。</p>
+<h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p>结合 Autoencoder 的思想：好的权重意味着提取关键特征，并可以进行复原。</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>对于一个多层的神经网络，我们由低到高依次对每层进行 autoencoder 的训练。如图：</p>
+<p><img src="http://noclyt.qiniudn.com/pre-training.png" alt="pre-train"> </p>
+<h1 id="Regularization-in-Deep-Learning"><a href="#Regularization-in-Deep-Learning" class="headerlink" title="Regularization in Deep Learning"></a>Regularization in Deep Learning</h1><p>随着神经元的增多，神经网络的模型复杂度也随之增加。因此在模型中加入 Regularization（正则化）是必不可少的。</p>
+<ul>
+<li>限制模型复杂度</li>
+<li>削弱权重值</li>
+<li>提前停止</li>
+<li>Denosing</li>
+<li>…</li>
+</ul>
+<h1 id="Denosing"><a href="#Denosing" class="headerlink" title="Denosing"></a>Denosing</h1><p>问题：一般的学习问题中，nosing对训练的正确性影响很大。</p>
+<p>思想：学习得到一个新的分类器，用于<strong>“辨别”</strong>是否包含杂讯的数据（并转化）。</p>
+<p>方法：对正常的数据 $\mathbf{x}$，人工加上noise产生 $\mathbf{\tilde{x}}$ 。学习数据 $ (\mathbf{\tilde{X}}, Y=\mathbf{X}) $ 。这样就可以得到一个新的分类器，这个分类器可以用于将包含杂讯的$\mathbf{\tilde{x}}$ 转化为“正确的”$\mathbf{x}$。</p>
+
+
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        black words fixed on the right end
+    </div>
+    <div class="secondrow">
+        <a href="url of the blue words">
+        blue words fixed on the right end
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+</script>
+
+</body>
+</html>

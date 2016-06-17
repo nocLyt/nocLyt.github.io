@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>Github上的Hexo博客绑定个性域名</title>
+  <meta name="author" content="nocLyt">
+   <meta name="description" content="代码 文学">
+  
+
+  <meta property="og:title" content="Github上的Hexo博客绑定个性域名"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="笔良文昌"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;笔为良，则文者昌
+      </div>
+    </div>
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        Github上的Hexo博客绑定个性域名
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      
+<time datetime="2014-11-24T11:15:32.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  Nov 24 2014
+</time>
+
+
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/Github/">Github</a>·<a href="/tags/Hexo/">Hexo</a>·<a href="/tags/DNS/">DNS</a>
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h2 id="Godaddy注册一个域名"><a href="#Godaddy注册一个域名" class="headerlink" title="Godaddy注册一个域名"></a>Godaddy注册一个域名</h2><p>“论如何在Godaddy注册一个域名”</p>
+<h2 id="Godaddy域名绑定到DNSPod"><a href="#Godaddy域名绑定到DNSPod" class="headerlink" title="Godaddy域名绑定到DNSPod"></a>Godaddy域名绑定到DNSPod</h2><p>详见DNSPod官方帮助页面：<a href="https://support.dnspod.cn/Kb/showarticle/tsid/42/" target="_blank" rel="external">Godaddy注册商域名修改DNS地址</a></p>
+<h2 id="DNSPod上设置域名的DNS"><a href="#DNSPod上设置域名的DNS" class="headerlink" title="DNSPod上设置域名的DNS"></a>DNSPod上设置域名的DNS</h2><p>首先找到GitHub的两个IP地址：<code>192.30.252.153</code>、 <code>192.30.252.154</code><br>然后在DNSPod设置域名，如下：<br><img src="http://noclyt.qiniudn.com/DNSpod设置.png" alt="DNSpod"></p>
+<h2 id="在Hexo博客设置CNAME"><a href="#在Hexo博客设置CNAME" class="headerlink" title="在Hexo博客设置CNAME"></a>在Hexo博客设置CNAME</h2><p>在博客源文件<code>./source</code>下创建一个文件名是<code>CNAME</code>的文本文件，该文件内容只有一行，就是你注册的域名。<br>例如:</p>
+<blockquote>
+<p>noclyt.com </p>
+</blockquote>
+<p>然后把Hexo发布到Github。</p>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>因为服务器同步需要一会，所以访问出现Github的404页面是正常的。大约等十分钟即可。</p>
+
+
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        black words fixed on the right end
+    </div>
+    <div class="secondrow">
+        <a href="url of the blue words">
+        blue words fixed on the right end
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>Python的map,readue,filter函数</title>
+  <meta name="author" content="nocLyt">
+   <meta name="description" content="代码 文学">
+  
+
+  <meta property="og:title" content="Python的map,readue,filter函数"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="笔良文昌"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;笔为良，则文者昌
+      </div>
+    </div>
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        Python的map,readue,filter函数
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      
+<time datetime="2015-02-28T03:49:16.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  Feb 28 2015
+</time>
+
+
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/python/">python</a>
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h2 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h2><blockquote>
+<p><a href="https://docs.python.org/2/library/functions.html#map" target="_blank" rel="external">map(function, iterable, …)</a> </p>
+</blockquote>
+<p>解释：</p>
+<ol>
+<li>第一个参数是一个函数 function ，后面可以跟多个参数</li>
+<li>除了第一个参数，其他参数必须是 iterable</li>
+<li>返回值是一个列表 </li>
+<li>该列表中的第i个元素是 function以所有其他参数的的第i个元素组成的参数列表的值</li>
+</ol>
+<p>代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(str, range(<span class="number">5</span>))           <span class="comment"># 对range(5)各项进行str操作</span></span><br><span class="line">[<span class="string">'0'</span>, <span class="string">'1'</span>, <span class="string">'2'</span>, <span class="string">'3'</span>, <span class="string">'4'</span>]        <span class="comment"># 返回列表</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x,y)</span>:</span><span class="keyword">return</span> x+y</span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>)</span><br><span class="line">[<span class="string">'zP'</span>, <span class="string">'hy'</span>, <span class="string">'ot'</span>, <span class="string">'uh'</span>, <span class="string">'jo'</span>, <span class="string">'yn'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 想要输入多个序列，需要支持多个参数的函数，注意的是各序列的长度必须一样，否则报错：</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x,y)</span>:</span><span class="keyword">return</span> x+y</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>)</span><br><span class="line">[<span class="string">'zP'</span>, <span class="string">'hy'</span>, <span class="string">'ot'</span>, <span class="string">'uh'</span>, <span class="string">'jo'</span>, <span class="string">'yn'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x,y,z)</span>:</span><span class="keyword">return</span> x+y+z</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>,<span class="string">'test'</span>)     <span class="comment">#'test'的长度比其他2个小</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: add() takes exactly <span class="number">2</span> arguments (<span class="number">3</span> given)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>,<span class="string">'testop'</span>)</span><br><span class="line">[<span class="string">'zPt'</span>, <span class="string">'hye'</span>, <span class="string">'ots'</span>, <span class="string">'uht'</span>, <span class="string">'joo'</span>, <span class="string">'ynp'</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="reduce"><a href="#reduce" class="headerlink" title="reduce()"></a>reduce()</h2><blockquote>
+<p><a href="https://docs.python.org/2/library/functions.html#reduce" target="_blank" rel="external">reduce(function, iterable[, initializer])</a></p>
+</blockquote>
+<p>解释：</p>
+<ol>
+<li>第一个参数是函数，第二个参数是可迭代的，第三个是可选参数。</li>
+<li>第一个参数必须是只有两个参数的函数。</li>
+<li>如果有第三个参数，则把它当做reduce()计算的初始值。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reduce(<span class="keyword">lambda</span> x, y: x+y, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])  <span class="comment"># calculates ((((1+2)+3)+4)+5)</span></span><br></pre></td></tr></table></figure>
+<h2 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h2><blockquote>
+<p><a href="https://docs.python.org/2/library/functions.html#filter" target="_blank" rel="external">filter(function, iterable)</a></p>
+</blockquote>
+<p>解释：</p>
+<ol>
+<li>第一个的参数是一个函数，第二个参数是可迭代的</li>
+<li>以iteable的元素为参数依次执行function()，将结果 =True 的元素组成列表返回，=False 则过滤。</li>
+</ol>
+<p>代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>filter(<span class="keyword">lambda</span> x : x%<span class="number">2</span>,range(<span class="number">10</span>))        <span class="comment">#lambda 函数返回奇数，返回列表</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>]</span><br></pre></td></tr></table></figure>
+
+
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        black words fixed on the right end
+    </div>
+    <div class="secondrow">
+        <a href="url of the blue words">
+        blue words fixed on the right end
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+</script>
+
+</body>
+</html>

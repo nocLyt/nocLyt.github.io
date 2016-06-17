@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>关于IERA</title>
+  <meta name="author" content="nocLyt">
+   <meta name="description" content="代码 文学">
+  
+
+  <meta property="og:title" content="关于IERA"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="笔良文昌"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;笔为良，则文者昌
+      </div>
+    </div>
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        关于IERA
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      
+<time datetime="2015-03-20T04:19:30.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  Mar 20 2015
+</time>
+
+
+
+
+
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <p><strong>这里现在不会提供帮助了，如需帮助请留言</strong></p>
+<p>IERA 是我在支付宝实习时写的一个与ODPS交互的半自动化的用于数据分析的可视化工具。</p>
+<p>基于Python2.7+PyQt4 开发的，后端使用 Odpscmd 与ODPS交互。</p>
+<p>之所以这么做是因为两点：</p>
+<ol>
+<li>开发初期时间紧张且只有我自己一人负责，用Python怎么快怎么来。</li>
+<li>ODPS平台的Python API是厂内员工闲余时维护的。当时 API 功能不能满足需求，退而求其次用了 Odpscmd。</li>
+</ol>
+<p>这也正是坑不断的原因。</p>
+<p>如果你看到了IERA，恰好你看到了这个网页，又恰好你想完善IERA。我有以下两点建议&amp;请求：</p>
+<ol>
+<li>后端去除Odpscmd的依赖。如果Python API还是不满足需求，就封装个Java API包。我一直想做这个件事，当我开发好Smart IERA准备着手这件事的时候，我被调离了博山组……</li>
+<li>帮我修一下 BUG…</li>
+</ol>
+<p>我估计现在厂内应该出现有 IERA 类似功能的项目了。因为我离职前，正有开发的同事跟我咨询这一套流程。</p>
+<p>IERA 作为一个我们组内用的小程序，我觉得从我离开博山组，他的生命周期就到头了。但它的功能已经很健全了（排除一些 BUG 的话），不吹不黑，确实提高了我们分析数据的效率。</p>
+<p>在我离开前的日子，情报中心的同学用 IERA 进行分析数据，就已经超过我对它预期了。也可见厂内的完善数据分析工具的工作，任重而道远。</p>
+<p>非常感谢博山给我的包容和支持，感谢同事们给我的鼓励和帮助！</p>
+<p>现在回想开发 IERA 时，自己有太多的不足，感觉对不起博山对自己的信任，只能给当时的自己打 7 分。如果还能下次跟着博山继续干，我要让自己努力做到 10 分！</p>
+
+
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        black words fixed on the right end
+    </div>
+    <div class="secondrow">
+        <a href="url of the blue words">
+        blue words fixed on the right end
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>用Emacs优雅的抒写markdown</title>
+  <meta name="author" content="nocLyt">
+   <meta name="description" content="代码 文学">
+  
+
+  <meta property="og:title" content="用Emacs优雅的抒写markdown"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="笔良文昌"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;笔为良，则文者昌
+      </div>
+    </div>
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        用Emacs优雅的抒写markdown
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      
+<time datetime="2015-02-01T15:04:12.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  Feb 1 2015
+</time>
+
+
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/Emacs/">Emacs</a>·<a href="/tags/Markdown/">Markdown</a>·<a href="/tags/Pandoc/">Pandoc</a>
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h1 id="啥？"><a href="#啥？" class="headerlink" title="啥？"></a>啥？</h1><p>作为一个Emacser肯定是用Emacs写markdown的。</p>
+<p>我觉得称得上“优雅”需要两点：</p>
+<ol>
+<li>编辑器可以提供自动补全，关键字高亮，模板补全</li>
+<li>快捷键预览markdown文件（输出html、pdf格式都可以）</li>
+</ol>
+<p>既然想优雅的写markdown，我们就需要下面两个插件：</p>
+<ol>
+<li>markdown-mode.el</li>
+<li>Pandoc</li>
+</ol>
+<h1 id="markdown-mode-el"><a href="#markdown-mode-el" class="headerlink" title="markdown-mode.el"></a>markdown-mode.el</h1><p>这是Emacs的关于markdown的插件，可以通过elpa直接安装。</p>
+<p>现已发现的优点：</p>
+<ol>
+<li>关键字高亮</li>
+<li>快捷键自动补全（例如Org-mode的Alt+Enter功能）</li>
+<li>快速模板、自定义模板（再也不用担心忘了怎么插入图片了…）</li>
+<li>待探索…</li>
+</ol>
+<h1 id="Pandoc"><a href="#Pandoc" class="headerlink" title="Pandoc"></a>Pandoc</h1><p>让我们先看一下Pandoc的wiki:</p>
+<blockquote>
+<p>Pandoc是由John MacFarlane开发的标记语言转换工具，可实现不同标记语言间的格式转换，堪称该领域中的“瑞士军刀”。Pandoc使用Haskell语言编写，以命令行形式实现与用户的交互，可支持多种操作系统；Pandoc采用GNU GPL授权协议发布，属于自由软件。</p>
+</blockquote>
+<p>所以我们使用Pandoc的目的是：<strong>直接预览一个markdown文件</strong></p>
+<h3 id="1-安装Pandoc"><a href="#1-安装Pandoc" class="headerlink" title="1. 安装Pandoc"></a>1. 安装Pandoc</h3><p>对于Mac，现在可以直接通过Homebrew安装Pandoc</p>
+<blockquote>
+<p>$ brew install pandoc</p>
+</blockquote>
+<h3 id="2-配置预览快捷键命令"><a href="#2-配置预览快捷键命令" class="headerlink" title="2. 配置预览快捷键命令"></a>2. 配置预览快捷键命令</h3><p>Emacs的mardown-mode自带预览快捷键:<code>C-c C-c p</code>。既然我们使用pandoc来预览，就需要修改一下快捷键对应的执行命令：</p>
+<blockquote>
+<p>Emacs菜单栏”option” -&gt; “Customize Emacs” -&gt; “Specific Option” -&gt; 输入 mardown-command</p>
+</blockquote>
+<p>然后再文本框里输入预览快捷键<code>C-c C-c p</code>对应执行的命令（默认是<code>markdown</code>）：</p>
+<blockquote>
+<p>pandoc -f markdown -t html -s –mathjax –highlight-style pygments</p>
+</blockquote>
+<p>为什么命令长这个样子？</p>
+<ol>
+<li><code>-f mardown -t html</code> 表示把一个mardown文件输出为一个html文件，效果就是在默认浏览器打开一个网页进行预览markdown文件的内容</li>
+<li><code>--mathjax</code> 支持LaTeX数学公式</li>
+<li><code>--highlight-stype pygments</code> 使用pygments支持语法高亮</li>
+</ol>
+<h3 id="3-最终效果"><a href="#3-最终效果" class="headerlink" title="3. 最终效果"></a>3. 最终效果</h3><p>打开Emacs编辑一个markdown文件，按<code>C-c C-c p</code>直接在浏览器中预览markdown文件。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>终于可以优雅的写markdown文件了。还要再学一下markdown-mode的配置和Pandoc的参数，这样用起来会更顺手。我会把一些使用心得更新在这里。</p>
+
+
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        black words fixed on the right end
+    </div>
+    <div class="secondrow">
+        <a href="url of the blue words">
+        blue words fixed on the right end
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+</script>
+
+</body>
+</html>
