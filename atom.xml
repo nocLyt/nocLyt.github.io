@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://noclyt.github.io/"/>
-  <updated>2016-06-20T09:27:20.000Z</updated>
+  <updated>2016-07-20T15:52:30.000Z</updated>
   <id>http://noclyt.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二十三立</title>
+    <link href="http://noclyt.github.io/2016/07/20/birthday-23/"/>
+    <id>http://noclyt.github.io/2016/07/20/birthday-23/</id>
+    <published>2016-07-20T15:50:02.000Z</published>
+    <updated>2016-07-20T15:52:30.000Z</updated>
+    
+    <content type="html">&lt;p&gt;趁着自己二十三岁生日的最后几分钟，写点东西，说下自己虚度的这一年的感悟。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;趁着自己二十三岁生日的最后几分钟，写点东西，说下自己虚度的这一年的感悟。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>上传剪贴板图片到 CDN 服务器</title>
@@ -202,7 +222,7 @@
     <link href="http://noclyt.github.io/2015/02/14/mooc-ntu-deeplearning/"/>
     <id>http://noclyt.github.io/2015/02/14/mooc-ntu-deeplearning/</id>
     <published>2015-02-14T14:19:00.000Z</published>
-    <updated>2016-06-20T07:19:14.000Z</updated>
+    <updated>2016-06-20T17:24:45.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;神经网络的关键问题&quot;&gt;&lt;a href=&quot;#神经网络的关键问题&quot; class=&quot;headerlink&quot; title=&quot;神经网络的关键问题&quot;&gt;&lt;/a&gt;神经网络的关键问题&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;网络结构&lt;/p&gt;
