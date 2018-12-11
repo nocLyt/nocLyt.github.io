@@ -6,15 +6,15 @@
 
 
 <html class="theme-next pisces use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -29,7 +29,7 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -63,58 +63,42 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="python,macOS," />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <meta name="keywords" content="macOS,python,">
 
 
 
 
 
+  <link rel="alternate" href="/atom.xml" title="笔良文昌" type="application/atom+xml">
 
-<meta name="description" content="啥问题我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。
-要干啥将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。PS: 这里选择的 CDN 服务商是 QiNiu
-这么做安装依赖
-安装 pngpaste
-安装 qiniu 的 python API 模块
 
-代码Github-u">
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
+
+
+
+
+
+
+<meta name="description" content="啥问题我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。 要干啥将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。PS: 这里选择的 CDN 服务商是 QiNiu 这么做安装依赖 安装 pngpaste 安装 qiniu 的 python API 模块  代码Github-u">
+<meta name="keywords" content="macOS,python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="上传剪贴板图片到 CDN 服务器">
 <meta property="og:url" content="http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/index.html">
 <meta property="og:site_name" content="笔良文昌">
-<meta property="og:description" content="啥问题我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。
-要干啥将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。PS: 这里选择的 CDN 服务商是 QiNiu
-这么做安装依赖
-安装 pngpaste
-安装 qiniu 的 python API 模块
-
-代码Github-u">
+<meta property="og:description" content="啥问题我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。 要干啥将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。PS: 这里选择的 CDN 服务商是 QiNiu 这么做安装依赖 安装 pngpaste 安装 qiniu 的 python API 模块  代码Github-u">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://noclyt.qiniudn.com/2016_06_20_15_12_23.png">
 <meta property="og:updated_time" content="2016-06-20T09:27:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="上传剪贴板图片到 CDN 服务器">
-<meta name="twitter:description" content="啥问题我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。
-要干啥将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。PS: 这里选择的 CDN 服务商是 QiNiu
-这么做安装依赖
-安装 pngpaste
-安装 qiniu 的 python API 模块
-
-代码Github-u">
+<meta name="twitter:description" content="啥问题我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。 要干啥将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。PS: 这里选择的 CDN 服务商是 QiNiu 这么做安装依赖 安装 pngpaste 安装 qiniu 的 python API 模块  代码Github-u">
 <meta name="twitter:image" content="http://noclyt.qiniudn.com/2016_06_20_15_12_23.png">
 
 
@@ -136,12 +120,12 @@
 
 
 
-  <link rel="canonical" href="http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/"/>
+  <link rel="canonical" href="http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/">
 
   <title> 上传剪贴板图片到 CDN 服务器 | 笔良文昌 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -162,12 +146,12 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">笔良文昌</span>
       <span class="logo-line-after"><i></i></span>
@@ -194,7 +178,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -204,7 +188,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -214,7 +198,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about-me" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -224,7 +208,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -257,7 +241,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -280,7 +264,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-20T14:47:20+08:00" content="Jun 20 2016">
+            <time itemprop="dateCreated" datetime="2016-06-20T14:47:20-04:00" content="Jun 20 2016">
               Jun 20 2016
             </time>
           </span>
@@ -316,12 +300,12 @@
 
       
         <h1 id="啥问题"><a href="#啥问题" class="headerlink" title="啥问题"></a>啥问题</h1><p>我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。</p>
-<h1 id="要干啥"><a href="#要干啥" class="headerlink" title="要干啥"></a>要干啥</h1><p>将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。<br>PS: 这里选择的 CDN 服务商是 <a href="http://www.qiniu.com" target="_blank" rel="external">QiNiu</a></p>
+<h1 id="要干啥"><a href="#要干啥" class="headerlink" title="要干啥"></a>要干啥</h1><p>将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。<br>PS: 这里选择的 CDN 服务商是 <a href="http://www.qiniu.com" target="_blank" rel="noopener">QiNiu</a></p>
 <h1 id="这么做"><a href="#这么做" class="headerlink" title="这么做"></a>这么做</h1><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><ol>
 <li>安装 pngpaste</li>
 <li>安装 qiniu 的 python API 模块</li>
 </ol>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><a href="https://github.com/nocLyt/uploadpic2cdn" target="_blank" rel="external">Github-uploadpic2cnd</a></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><a href="https://github.com/nocLyt/uploadpic2cdn" target="_blank" rel="noopener">Github-uploadpic2cnd</a></p>
 <h1 id="结果是这样子"><a href="#结果是这样子" class="headerlink" title="结果是这样子"></a>结果是这样子</h1><p>macOS 的系统截屏快捷键是 <code>Ctrl+Command+Option+4</code>。<br>截取图片后运行程序直接回上传到设置好的 CDN 服务器并返回短链接。如下图例：</p>
 <p><img src="http://noclyt.qiniudn.com/2016_06_20_15_12_23.png" alt="my_uplaod_example"></p>
 
@@ -345,9 +329,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag">#python</a>
-          
             <a href="/tags/macOS/" rel="tag">#macOS</a>
+          
+            <a href="/tags/python/" rel="tag">#python</a>
           
         </div>
       
@@ -363,10 +347,6 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/20/birthday-23/" rel="prev" title="二十三立">
-                二十三立 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -392,8 +372,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/20/upload-pictures-from-clipboard2CDNServers/"
-           data-title="上传剪贴板图片到 CDN 服务器" data-url="http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/">
+      <div class="ds-thread" data-thread-key="2016/06/20/upload-pictures-from-clipboard2CDNServers/" data-title="上传剪贴板图片到 CDN 服务器" data-url="http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/">
       </div>
     
   </div>
@@ -418,7 +397,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -428,17 +407,15 @@
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://7rflg5.com1.z0.glb.clouddn.com/mao1.jpg"
-               alt="noclyt" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="http://7rflg5.com1.z0.glb.clouddn.com/mao1.jpg" alt="noclyt">
           <p class="site-author-name" itemprop="name">noclyt</p>
           <p class="site-description motion-element" itemprop="description">唯一能逃避的仅仅是逃避本身</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -552,10 +529,10 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy;  2014 - 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

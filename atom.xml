@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>笔良文昌</title>
+  <icon>https://www.gravatar.com/avatar/4687ccd88e7ba44ceb6c7e3c816db742</icon>
   <subtitle>笔为良，则文者昌</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://noclyt.github.io/"/>
-  <updated>2016-07-20T15:59:23.000Z</updated>
+  <updated>2016-06-20T09:27:20.000Z</updated>
   <id>http://noclyt.github.io/</id>
   
   <author>
@@ -16,62 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>二十三立</title>
-    <link href="http://noclyt.github.io/2016/07/20/birthday-23/"/>
-    <id>http://noclyt.github.io/2016/07/20/birthday-23/</id>
-    <published>2016-07-20T15:50:02.000Z</published>
-    <updated>2016-07-20T15:59:23.000Z</updated>
-    
-    <content type="html">&lt;p&gt;趁着自己二十三岁生日的最后几分钟，写点东西，说下自己虚度的这一年的感悟。&lt;/p&gt;
-&lt;p&gt;这一年都在准备托福和 GRE，结果一年过去了，成绩似乎才达到别人裸考的水平。&lt;/p&gt;
-&lt;p&gt;自己的自制力太不行，口口声声说着要出国，结果总是把自己的不努力推卸到「不想学英语」「学不动英语」的借口上。&lt;/p&gt;
-&lt;p&gt;自己是害怕失败。不想做题，害怕失败。&lt;/p&gt;
-&lt;p&gt;这一年让我看到了最懦弱的自己。以前还有一些自己的兴趣方向上的小聪明支撑这自己成就。而现在在英语这个方向，自己似乎是彻彻底底的失败者。&lt;/p&gt;
-&lt;p&gt;没有毅力，没有坚持。一个计划只能持续两三天。借口不断。&lt;/p&gt;
-&lt;p&gt;无论如何，还有最后49天的时间。托福努力上100+，UIUC 还有希望。否则，只能大约去个 TOP50 的学校了。&lt;/p&gt;
-&lt;p&gt;这次真的要努力了。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;趁着自己二十三岁生日的最后几分钟，写点东西，说下自己虚度的这一年的感悟。&lt;/p&gt;
-&lt;p&gt;这一年都在准备托福和 GRE，结果一年过去了，成绩似乎才达到别人裸考的水平。&lt;/p&gt;
-&lt;p&gt;自己的自制力太不行，口口声声说着要出国，结果总是把自己的不努力推卸到「不想学英语」「学不动英语
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>上传剪贴板图片到 CDN 服务器</title>
     <link href="http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/"/>
     <id>http://noclyt.github.io/2016/06/20/upload-pictures-from-clipboard2CDNServers/</id>
-    <published>2016-06-20T06:47:20.000Z</published>
+    <published>2016-06-20T18:47:20.000Z</published>
     <updated>2016-06-20T09:27:20.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;啥问题&quot;&gt;&lt;a href=&quot;#啥问题&quot; class=&quot;headerlink&quot; title=&quot;啥问题&quot;&gt;&lt;/a&gt;啥问题&lt;/h1&gt;&lt;p&gt;我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。&lt;/p&gt;
-&lt;h1 id=&quot;要干啥&quot;&gt;&lt;a href=&quot;#要干啥&quot; class=&quot;headerlink&quot; title=&quot;要干啥&quot;&gt;&lt;/a&gt;要干啥&lt;/h1&gt;&lt;p&gt;将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。&lt;br&gt;PS: 这里选择的 CDN 服务商是 &lt;a href=&quot;http://www.qiniu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;QiNiu&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;这么做&quot;&gt;&lt;a href=&quot;#这么做&quot; class=&quot;headerlink&quot; title=&quot;这么做&quot;&gt;&lt;/a&gt;这么做&lt;/h1&gt;&lt;h2 id=&quot;安装依赖&quot;&gt;&lt;a href=&quot;#安装依赖&quot; class=&quot;headerlink&quot; title=&quot;安装依赖&quot;&gt;&lt;/a&gt;安装依赖&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;安装 pngpaste&lt;/li&gt;
-&lt;li&gt;安装 qiniu 的 python API 模块&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/nocLyt/uploadpic2cdn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github-uploadpic2cnd&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;结果是这样子&quot;&gt;&lt;a href=&quot;#结果是这样子&quot; class=&quot;headerlink&quot; title=&quot;结果是这样子&quot;&gt;&lt;/a&gt;结果是这样子&lt;/h1&gt;&lt;p&gt;macOS 的系统截屏快捷键是 &lt;code&gt;Ctrl+Command+Option+4&lt;/code&gt;。&lt;br&gt;截取图片后运行程序直接回上传到设置好的 CDN 服务器并返回短链接。如下图例：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://noclyt.qiniudn.com/2016_06_20_15_12_23.png&quot; alt=&quot;my_uplaod_example&quot;&gt;&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<h1 id="啥问题"><a href="#啥问题" class="headerlink" title="啥问题"></a>啥问题</h1><p>我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。</p><h1 id="要干啥"><a href="#要干啥" class="headerlink" title="要干啥"></a>要干啥</h1><p>将系统剪贴板中的图片直接利用 CDN 服务商提供的 API 上传到服务器，并返回图片在 CDN Server 上的链接。<br>PS: 这里选择的 CDN 服务商是 <a href="http://www.qiniu.com" target="_blank" rel="noopener">QiNiu</a></p><h1 id="这么做"><a href="#这么做" class="headerlink" title="这么做"></a>这么做</h1><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><ol><li>安装 pngpaste</li><li>安装 qiniu 的 python API 模块</li></ol><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><a href="https://github.com/nocLyt/uploadpic2cdn" target="_blank" rel="noopener">Github-uploadpic2cnd</a></p><h1 id="结果是这样子"><a href="#结果是这样子" class="headerlink" title="结果是这样子"></a>结果是这样子</h1><p>macOS 的系统截屏快捷键是 <code>Ctrl+Command+Option+4</code>。<br>截取图片后运行程序直接回上传到设置好的 CDN 服务器并返回短链接。如下图例：</p><p><img src="http://noclyt.qiniudn.com/2016_06_20_15_12_23.png" alt="my_uplaod_example"></p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;啥问题&quot;&gt;&lt;a href=&quot;#啥问题&quot; class=&quot;headerlink&quot; title=&quot;啥问题&quot;&gt;&lt;/a&gt;啥问题&lt;/h1&gt;&lt;p&gt;我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;啥问题&quot;&gt;&lt;a href=&quot;#啥问题&quot; class=&quot;headerlink&quot; title=&quot;啥问题&quot;&gt;&lt;/a&gt;啥问题&lt;/h1&gt;&lt;p&gt;我在写markdown 时会将引用的图片上传到CDN服务器，然而上传步骤略微繁琐而且容易打断写作的思路。&lt;/p&gt;
 &lt;h1 id=&quot;要
+      
     
     </summary>
     
     
-      <category term="python" scheme="http://noclyt.github.io/tags/python/"/>
-    
       <category term="macOS" scheme="http://noclyt.github.io/tags/macOS/"/>
+    
+      <category term="python" scheme="http://noclyt.github.io/tags/python/"/>
     
   </entry>
   
@@ -79,35 +46,18 @@
     <title>关于IERA</title>
     <link href="http://noclyt.github.io/2015/03/20/iera-FAQ/"/>
     <id>http://noclyt.github.io/2015/03/20/iera-FAQ/</id>
-    <published>2015-03-20T04:19:30.000Z</published>
+    <published>2015-03-20T16:19:30.000Z</published>
     <updated>2016-06-20T07:42:35.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;strong&gt;这里现在不会提供帮助了，如需帮助发邮件至 noclyt@gmail.com&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;IERA 是我在支付宝实习时写的一个与ODPS交互的半自动化的用于数据分析的可视化工具。&lt;/p&gt;
-&lt;p&gt;基于Python2.7+PyQt4 开发的，后端使用 Odpscmd 与ODPS交互。&lt;/p&gt;
-&lt;p&gt;之所以这么做是因为两点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;开发初期时间紧张且只有我自己一人负责，用Python怎么快怎么来。&lt;/li&gt;
-&lt;li&gt;ODPS平台的Python API是厂内员工闲余时维护的。当时 API 功能不能满足需求，退而求其次用了 Odpscmd。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;这也正是坑不断的原因。&lt;/p&gt;
-&lt;p&gt;如果你看到了IERA，恰好你看到了这个网页，又恰好你想完善IERA。我有以下两点建议&amp;amp;请求：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;后端去除Odpscmd的依赖。如果Python API还是不满足需求，就封装个Java API包。我一直想做这个件事，当我开发好Smart IERA准备着手这件事的时候，我被调离了博山组……&lt;/li&gt;
-&lt;li&gt;帮我修一下 BUG…&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;我估计现在厂内应该出现有 IERA 类似功能的项目了。因为我离职前，正有开发的同事跟我咨询这一套流程。&lt;/p&gt;
-&lt;p&gt;IERA 作为一个我们组内用的小程序，我觉得从我离开博山组，他的生命周期就到头了。但它的功能已经很健全了（排除一些 BUG 的话），不吹不黑，确实提高了我们分析数据的效率。&lt;/p&gt;
-&lt;p&gt;在我离开前的日子，情报中心的同学用 IERA 进行分析数据，就已经超过我对它预期了。也可见厂内的完善数据分析工具的工作，任重而道远。&lt;/p&gt;
-&lt;p&gt;非常感谢博山给我的包容和支持，感谢同事们给我的鼓励和帮助！&lt;/p&gt;
-&lt;p&gt;现在回想开发 IERA 时，自己有太多的不足，感觉对不起博山对自己的信任，只能给当时的自己打 7 分。如果还能下次跟着博山继续干，我要让自己努力做到 10 分！&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p><strong>这里现在不会提供帮助了，如需帮助发邮件至 <a href="mailto:noclyt@gmail.com" target="_blank" rel="noopener">noclyt@gmail.com</a></strong></p><p>IERA 是我在支付宝实习时写的一个与ODPS交互的半自动化的用于数据分析的可视化工具。</p><p>基于Python2.7+PyQt4 开发的，后端使用 Odpscmd 与ODPS交互。</p><p>之所以这么做是因为两点：</p><ol><li>开发初期时间紧张且只有我自己一人负责，用Python怎么快怎么来。</li><li>ODPS平台的Python API是厂内员工闲余时维护的。当时 API 功能不能满足需求，退而求其次用了 Odpscmd。</li></ol><p>这也正是坑不断的原因。</p><p>如果你看到了IERA，恰好你看到了这个网页，又恰好你想完善IERA。我有以下两点建议&amp;请求：</p><ol><li>后端去除Odpscmd的依赖。如果Python API还是不满足需求，就封装个Java API包。我一直想做这个件事，当我开发好Smart IERA准备着手这件事的时候，我被调离了博山组……</li><li>帮我修一下 BUG…</li></ol><p>我估计现在厂内应该出现有 IERA 类似功能的项目了。因为我离职前，正有开发的同事跟我咨询这一套流程。</p><p>IERA 作为一个我们组内用的小程序，我觉得从我离开博山组，他的生命周期就到头了。但它的功能已经很健全了（排除一些 BUG 的话），不吹不黑，确实提高了我们分析数据的效率。</p><p>在我离开前的日子，情报中心的同学用 IERA 进行分析数据，就已经超过我对它预期了。也可见厂内的完善数据分析工具的工作，任重而道远。</p><p>非常感谢博山给我的包容和支持，感谢同事们给我的鼓励和帮助！</p><p>现在回想开发 IERA 时，自己有太多的不足，感觉对不起博山对自己的信任，只能给当时的自己打 7 分。如果还能下次跟着博山继续干，我要让自己努力做到 10 分！</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;这里现在不会提供帮助了，如需帮助发邮件至 noclyt@gmail.com&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;IERA 是我在支付宝实习时写的一个与ODPS交互的半自动化的用于数据分析的可视化工具。&lt;/p&gt;
-&lt;p&gt;基于Python2.7+PyQt4 开发的，后
+      
+      
+        &lt;p&gt;&lt;strong&gt;这里现在不会提供帮助了，如需帮助发邮件至 &lt;a href=&quot;mailto:noclyt@gmail.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;noclyt@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;IERA 是
+      
     
     </summary>
     
@@ -118,27 +68,18 @@
     <title>Bootstrap Bagging and Adaboost</title>
     <link href="http://noclyt.github.io/2015/03/08/adaptive-some-term/"/>
     <id>http://noclyt.github.io/2015/03/08/adaptive-some-term/</id>
-    <published>2015-03-08T08:50:11.000Z</published>
+    <published>2015-03-08T20:50:11.000Z</published>
     <updated>2015-03-08T15:45:43.000Z</updated>
     
-    <content type="html">&lt;p&gt;单个弱分类器（比如感知器、决策树）一般预测结果并不好。如果将多个弱分类器加权组合，对于新的预测，多个弱分类器根据各自的权值投票，得票最多的结果作为预测结果。这样的效果往往优于单个分类器。&lt;/p&gt;
-&lt;h1 id=&quot;Aggregation&quot;&gt;&lt;a href=&quot;#Aggregation&quot; class=&quot;headerlink&quot; title=&quot;Aggregation&quot;&gt;&lt;/a&gt;Aggregation&lt;/h1&gt;&lt;h2 id=&quot;含义&quot;&gt;&lt;a href=&quot;#含义&quot; class=&quot;headerlink&quot; title=&quot;含义&quot;&gt;&lt;/a&gt;含义&lt;/h2&gt;&lt;p&gt;多个弱分类器通过一定的方式组合成一个强分类器。&lt;/p&gt;
-&lt;h2 id=&quot;疑问&quot;&gt;&lt;a href=&quot;#疑问&quot; class=&quot;headerlink&quot; title=&quot;疑问&quot;&gt;&lt;/a&gt;疑问&lt;/h2&gt;&lt;p&gt;每个弱分类器的训练数据是什么样的呢？&lt;/p&gt;
-&lt;p&gt;每个分类器不可能全部都用完整的训练数据（这样的话每个弱分类器都是相同的了）。如果按照分类器的数量等分训练数据，每个弱分类器训练一部分数据，万一数据有杂讯，最终结果就容易受影响。比较好的解决方法是引入 Bootstrap .&lt;/p&gt;
-&lt;h1 id=&quot;Bootstrap&quot;&gt;&lt;a href=&quot;#Bootstrap&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap&quot;&gt;&lt;/a&gt;Bootstrap&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;从N条样本数据中，等比例有放回的抽取N次数据组成新的数据集。&lt;/p&gt;
-&lt;h2 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;headerlink&quot; title=&quot;特点&quot;&gt;&lt;/a&gt;特点&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;很好的解决了训练多个弱分类器时训练样本不够的问题&lt;/li&gt;
-&lt;li&gt;每条数据约有 66% 的概率被选入新数据集，也就是说新训练数据约包含原训练数据的 66% 。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;Bagging&quot;&gt;&lt;a href=&quot;#Bagging&quot; class=&quot;headerlink&quot; title=&quot;Bagging&quot;&gt;&lt;/a&gt;Bagging&lt;/h1&gt;&lt;h2 id=&quot;定义-1&quot;&gt;&lt;a href=&quot;#定义-1&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;对于K个弱分类器，每个分类器使用 Bootstrap 出的训练数据，然后做相同权值投票。&lt;/p&gt;
-&lt;h1 id=&quot;Boosting&quot;&gt;&lt;a href=&quot;#Boosting&quot; class=&quot;headerlink&quot; title=&quot;Boosting&quot;&gt;&lt;/a&gt;Boosting&lt;/h1&gt;&lt;h2 id=&quot;定义-2&quot;&gt;&lt;a href=&quot;#定义-2&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;Boosting是一种思想，得到不同的样本子集，通过不同的样本子集可以得到不同的弱分类器。按照一定的方法对多个弱分类器进行加权融合，最后结果是弱分类器加权投票的结果。&lt;/p&gt;
-&lt;h1 id=&quot;AdaBoost&quot;&gt;&lt;a href=&quot;#AdaBoost&quot; class=&quot;headerlink&quot; title=&quot;AdaBoost&quot;&gt;&lt;/a&gt;AdaBoost&lt;/h1&gt;&lt;h2 id=&quot;定义-3&quot;&gt;&lt;a href=&quot;#定义-3&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;每条训练数据都有一个权值。使用训练数据训练得弱分类器gi()，更新每条数据的权值（增大分类错误的数据的权值，减小分类正确的权值），计算gi()分类器的权值（与分类正确的数据的权值和有关）。再用更新后的训练数据权值训练得弱分类器gi+1()，以此类推。预测结果是多个弱分类器加权投票的结果。&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>单个弱分类器（比如感知器、决策树）一般预测结果并不好。如果将多个弱分类器加权组合，对于新的预测，多个弱分类器根据各自的权值投票，得票最多的结果作为预测结果。这样的效果往往优于单个分类器。</p><h1 id="Aggregation"><a href="#Aggregation" class="headerlink" title="Aggregation"></a>Aggregation</h1><h2 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h2><p>多个弱分类器通过一定的方式组合成一个强分类器。</p><h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><p>每个弱分类器的训练数据是什么样的呢？</p><p>每个分类器不可能全部都用完整的训练数据（这样的话每个弱分类器都是相同的了）。如果按照分类器的数量等分训练数据，每个弱分类器训练一部分数据，万一数据有杂讯，最终结果就容易受影响。比较好的解决方法是引入 Bootstrap .</p><h1 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>从N条样本数据中，等比例有放回的抽取N次数据组成新的数据集。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol><li>很好的解决了训练多个弱分类器时训练样本不够的问题</li><li>每条数据约有 66% 的概率被选入新数据集，也就是说新训练数据约包含原训练数据的 66% 。</li></ol><h1 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h1><h2 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h2><p>对于K个弱分类器，每个分类器使用 Bootstrap 出的训练数据，然后做相同权值投票。</p><h1 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h1><h2 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h2><p>Boosting是一种思想，得到不同的样本子集，通过不同的样本子集可以得到不同的弱分类器。按照一定的方法对多个弱分类器进行加权融合，最后结果是弱分类器加权投票的结果。</p><h1 id="AdaBoost"><a href="#AdaBoost" class="headerlink" title="AdaBoost"></a>AdaBoost</h1><h2 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h2><p>每条训练数据都有一个权值。使用训练数据训练得弱分类器gi()，更新每条数据的权值（增大分类错误的数据的权值，减小分类正确的权值），计算gi()分类器的权值（与分类正确的数据的权值和有关）。再用更新后的训练数据权值训练得弱分类器gi+1()，以此类推。预测结果是多个弱分类器加权投票的结果。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;单个弱分类器（比如感知器、决策树）一般预测结果并不好。如果将多个弱分类器加权组合，对于新的预测，多个弱分类器根据各自的权值投票，得票最多的结果作为预测结果。这样的效果往往优于单个分类器。&lt;/p&gt;
+      
+      
+        &lt;p&gt;单个弱分类器（比如感知器、决策树）一般预测结果并不好。如果将多个弱分类器加权组合，对于新的预测，多个弱分类器根据各自的权值投票，得票最多的结果作为预测结果。这样的效果往往优于单个分类器。&lt;/p&gt;
 &lt;h1 id=&quot;Aggregation&quot;&gt;&lt;a href=&quot;#Aggregat
+      
     
     </summary>
     
@@ -149,47 +90,18 @@
     <title>Python的map,readue,filter函数</title>
     <link href="http://noclyt.github.io/2015/02/28/python-map-reduce/"/>
     <id>http://noclyt.github.io/2015/02/28/python-map-reduce/</id>
-    <published>2015-02-28T03:49:16.000Z</published>
+    <published>2015-02-28T16:49:16.000Z</published>
     <updated>2015-03-01T05:43:25.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;map&quot;&gt;&lt;a href=&quot;#map&quot; class=&quot;headerlink&quot; title=&quot;map()&quot;&gt;&lt;/a&gt;map()&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/functions.html#map&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;map(function, iterable, …)&lt;/a&gt; &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解释：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;第一个参数是一个函数 function ，后面可以跟多个参数&lt;/li&gt;
-&lt;li&gt;除了第一个参数，其他参数必须是 iterable&lt;/li&gt;
-&lt;li&gt;返回值是一个列表 &lt;/li&gt;
-&lt;li&gt;该列表中的第i个元素是 function以所有其他参数的的第i个元素组成的参数列表的值&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;map(str, range(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;))           &lt;span class=&quot;comment&quot;&gt;# 对range(5)各项进行str操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;2&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;3&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;4&#39;&lt;/span&gt;]        &lt;span class=&quot;comment&quot;&gt;# 返回列表&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(x,y)&lt;/span&gt;:&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; x+y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;map(add,&lt;span class=&quot;string&quot;&gt;&#39;zhoujy&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;Python&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&#39;zP&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;hy&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;ot&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;uh&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;jo&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;yn&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 想要输入多个序列，需要支持多个参数的函数，注意的是各序列的长度必须一样，否则报错：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(x,y)&lt;/span&gt;:&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; x+y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;... &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;map(add,&lt;span class=&quot;string&quot;&gt;&#39;zhoujy&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;Python&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&#39;zP&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;hy&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;ot&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;uh&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;jo&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;yn&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(x,y,z)&lt;/span&gt;:&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; x+y+z&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;... &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;map(add,&lt;span class=&quot;string&quot;&gt;&#39;zhoujy&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;Python&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;test&#39;&lt;/span&gt;)     &lt;span class=&quot;comment&quot;&gt;#&#39;test&#39;的长度比其他2个小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Traceback (most recent call last):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &lt;span class=&quot;string&quot;&gt;&quot;&amp;lt;stdin&amp;gt;&quot;&lt;/span&gt;, line &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TypeError: add() takes exactly &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; arguments (&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; given)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;map(add,&lt;span class=&quot;string&quot;&gt;&#39;zhoujy&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;Python&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;testop&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;string&quot;&gt;&#39;zPt&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;hye&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;ots&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;uht&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;joo&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;ynp&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;reduce&quot;&gt;&lt;a href=&quot;#reduce&quot; class=&quot;headerlink&quot; title=&quot;reduce()&quot;&gt;&lt;/a&gt;reduce()&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/functions.html#reduce&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;reduce(function, iterable[, initializer])&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解释：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;第一个参数是函数，第二个参数是可迭代的，第三个是可选参数。&lt;/li&gt;
-&lt;li&gt;第一个参数必须是只有两个参数的函数。&lt;/li&gt;
-&lt;li&gt;如果有第三个参数，则把它当做reduce()计算的初始值。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;reduce(&lt;span class=&quot;keyword&quot;&gt;lambda&lt;/span&gt; x, y: x+y, [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;])  &lt;span class=&quot;comment&quot;&gt;# calculates ((((1+2)+3)+4)+5)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;filter&quot;&gt;&lt;a href=&quot;#filter&quot; class=&quot;headerlink&quot; title=&quot;filter()&quot;&gt;&lt;/a&gt;filter()&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/functions.html#filter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;filter(function, iterable)&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解释：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;第一个的参数是一个函数，第二个参数是可迭代的&lt;/li&gt;
-&lt;li&gt;以iteable的元素为参数依次执行function()，将结果 =True 的元素组成列表返回，=False 则过滤。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;filter(&lt;span class=&quot;keyword&quot;&gt;lambda&lt;/span&gt; x : x%&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,range(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;))        &lt;span class=&quot;comment&quot;&gt;#lambda 函数返回奇数，返回列表&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
+    <content type="html"><![CDATA[<h2 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h2><blockquote><p><a href="https://docs.python.org/2/library/functions.html#map" target="_blank" rel="noopener">map(function, iterable, …)</a> </p></blockquote><p>解释：</p><ol><li>第一个参数是一个函数 function ，后面可以跟多个参数</li><li>除了第一个参数，其他参数必须是 iterable</li><li>返回值是一个列表 </li><li>该列表中的第i个元素是 function以所有其他参数的的第i个元素组成的参数列表的值</li></ol><p>代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(str, range(<span class="number">5</span>))           <span class="comment"># 对range(5)各项进行str操作</span></span><br><span class="line">[<span class="string">'0'</span>, <span class="string">'1'</span>, <span class="string">'2'</span>, <span class="string">'3'</span>, <span class="string">'4'</span>]        <span class="comment"># 返回列表</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x,y)</span>:</span><span class="keyword">return</span> x+y</span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>)</span><br><span class="line">[<span class="string">'zP'</span>, <span class="string">'hy'</span>, <span class="string">'ot'</span>, <span class="string">'uh'</span>, <span class="string">'jo'</span>, <span class="string">'yn'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 想要输入多个序列，需要支持多个参数的函数，注意的是各序列的长度必须一样，否则报错：</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x,y)</span>:</span><span class="keyword">return</span> x+y</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>)</span><br><span class="line">[<span class="string">'zP'</span>, <span class="string">'hy'</span>, <span class="string">'ot'</span>, <span class="string">'uh'</span>, <span class="string">'jo'</span>, <span class="string">'yn'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x,y,z)</span>:</span><span class="keyword">return</span> x+y+z</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>,<span class="string">'test'</span>)     <span class="comment">#'test'的长度比其他2个小</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: add() takes exactly <span class="number">2</span> arguments (<span class="number">3</span> given)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>map(add,<span class="string">'zhoujy'</span>,<span class="string">'Python'</span>,<span class="string">'testop'</span>)</span><br><span class="line">[<span class="string">'zPt'</span>, <span class="string">'hye'</span>, <span class="string">'ots'</span>, <span class="string">'uht'</span>, <span class="string">'joo'</span>, <span class="string">'ynp'</span>]</span><br></pre></td></tr></table></figure><h2 id="reduce"><a href="#reduce" class="headerlink" title="reduce()"></a>reduce()</h2><blockquote><p><a href="https://docs.python.org/2/library/functions.html#reduce" target="_blank" rel="noopener">reduce(function, iterable[, initializer])</a></p></blockquote><p>解释：</p><ol><li>第一个参数是函数，第二个参数是可迭代的，第三个是可选参数。</li><li>第一个参数必须是只有两个参数的函数。</li><li>如果有第三个参数，则把它当做reduce()计算的初始值。</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reduce(<span class="keyword">lambda</span> x, y: x+y, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])  <span class="comment"># calculates ((((1+2)+3)+4)+5)</span></span><br></pre></td></tr></table></figure><h2 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h2><blockquote><p><a href="https://docs.python.org/2/library/functions.html#filter" target="_blank" rel="noopener">filter(function, iterable)</a></p></blockquote><p>解释：</p><ol><li>第一个的参数是一个函数，第二个参数是可迭代的</li><li>以iteable的元素为参数依次执行function()，将结果 =True 的元素组成列表返回，=False 则过滤。</li></ol><p>代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>filter(<span class="keyword">lambda</span> x : x%<span class="number">2</span>,range(<span class="number">10</span>))        <span class="comment">#lambda 函数返回奇数，返回列表</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>]</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;map&quot;&gt;&lt;a href=&quot;#map&quot; class=&quot;headerlink&quot; title=&quot;map()&quot;&gt;&lt;/a&gt;map()&lt;/h2&gt;&lt;blockquote&gt;
+      
+      
+        &lt;h2 id=&quot;map&quot;&gt;&lt;a href=&quot;#map&quot; class=&quot;headerlink&quot; title=&quot;map()&quot;&gt;&lt;/a&gt;map()&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/functi
+      
     
     </summary>
     
@@ -202,23 +114,17 @@
     <title>rfb-nnet</title>
     <link href="http://noclyt.github.io/2015/02/16/rfb-nnet/"/>
     <id>http://noclyt.github.io/2015/02/16/rfb-nnet/</id>
-    <published>2015-02-16T03:30:50.000Z</published>
+    <published>2015-02-16T16:30:50.000Z</published>
     <updated>2015-02-18T05:24:01.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;Full-RBF-Network&quot;&gt;&lt;a href=&quot;#Full-RBF-Network&quot; class=&quot;headerlink&quot; title=&quot;Full RBF Network&quot;&gt;&lt;/a&gt;Full RBF Network&lt;/h1&gt;&lt;p&gt;有多少笔资料（N），就有多少个中心。&lt;/p&gt;
-&lt;p&gt;物理意义：权重和每个点与中心的距离相关。&lt;/p&gt;
-&lt;p&gt;方法：假设每个点的权重都一样，那么对于一个新的点，所有点进行加权投票。每一张票的加权值 = exp(每个点到新点的距离)&lt;/p&gt;
-&lt;h2 id=&quot;K-Nearest-Neighbor&quot;&gt;&lt;a href=&quot;#K-Nearest-Neighbor&quot; class=&quot;headerlink&quot; title=&quot;K Nearest Neighbor&quot;&gt;&lt;/a&gt;K Nearest Neighbor&lt;/h2&gt;&lt;p&gt;对于一个新的点，选择最近的K个点，进行加权投票。&lt;/p&gt;
-&lt;p&gt;RBF Network Learning 这节课中间用了好多课件讲:Full RBF Network的Ein=0，可能会过拟合。所以我们要来找一些合适中心（而不是把所有N个点都当成中心）&lt;/p&gt;
-&lt;h2 id=&quot;K-Means&quot;&gt;&lt;a href=&quot;#K-Means&quot; class=&quot;headerlink&quot; title=&quot;K-Means&quot;&gt;&lt;/a&gt;K-Means&lt;/h2&gt;&lt;p&gt;方法： 。。。&lt;/p&gt;
-&lt;p&gt;我们利用 K-Means 选取一些合适的“中心”，然后用这些点做 RBF NNet 的特征转换。&lt;/p&gt;
-&lt;p&gt;敏感：K的值和初始点位置。&lt;/p&gt;
-&lt;p&gt;ID501068B5-Z9N86gQ2&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<h1 id="Full-RBF-Network"><a href="#Full-RBF-Network" class="headerlink" title="Full RBF Network"></a>Full RBF Network</h1><p>有多少笔资料（N），就有多少个中心。</p><p>物理意义：权重和每个点与中心的距离相关。</p><p>方法：假设每个点的权重都一样，那么对于一个新的点，所有点进行加权投票。每一张票的加权值 = exp(每个点到新点的距离)</p><h2 id="K-Nearest-Neighbor"><a href="#K-Nearest-Neighbor" class="headerlink" title="K Nearest Neighbor"></a>K Nearest Neighbor</h2><p>对于一个新的点，选择最近的K个点，进行加权投票。</p><p>RBF Network Learning 这节课中间用了好多课件讲:Full RBF Network的Ein=0，可能会过拟合。所以我们要来找一些合适中心（而不是把所有N个点都当成中心）</p><h2 id="K-Means"><a href="#K-Means" class="headerlink" title="K-Means"></a>K-Means</h2><p>方法： 。。。</p><p>我们利用 K-Means 选取一些合适的“中心”，然后用这些点做 RBF NNet 的特征转换。</p><p>敏感：K的值和初始点位置。</p><p>ID501068B5-Z9N86gQ2</p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Full-RBF-Network&quot;&gt;&lt;a href=&quot;#Full-RBF-Network&quot; class=&quot;headerlink&quot; title=&quot;Full RBF Network&quot;&gt;&lt;/a&gt;Full RBF Network&lt;/h1&gt;&lt;p&gt;有多少笔资料（N），就有多少
+      
+      
+        &lt;h1 id=&quot;Full-RBF-Network&quot;&gt;&lt;a href=&quot;#Full-RBF-Network&quot; class=&quot;headerlink&quot; title=&quot;Full RBF Network&quot;&gt;&lt;/a&gt;Full RBF Network&lt;/h1&gt;&lt;p&gt;有多少笔资料（N），就有多少
+      
     
     </summary>
     
@@ -229,64 +135,19 @@
     <title>mooc-ntu-deeplearning</title>
     <link href="http://noclyt.github.io/2015/02/14/mooc-ntu-deeplearning/"/>
     <id>http://noclyt.github.io/2015/02/14/mooc-ntu-deeplearning/</id>
-    <published>2015-02-14T14:19:00.000Z</published>
+    <published>2015-02-15T03:19:00.000Z</published>
     <updated>2016-06-20T17:24:45.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;神经网络的关键问题&quot;&gt;&lt;a href=&quot;#神经网络的关键问题&quot; class=&quot;headerlink&quot; title=&quot;神经网络的关键问题&quot;&gt;&lt;/a&gt;神经网络的关键问题&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;网络结构&lt;/p&gt;
-&lt;p&gt;  &lt;strong&gt;具体问题具体分析&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;  例如：数字图像处理中得Convolutional NNet(卷积神经网络)是把相邻的像素&lt;em&gt;相关联&lt;/em&gt;，距离远的则&lt;em&gt;无关联&lt;/em&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;高模型复杂度&lt;/p&gt;
-&lt;p&gt;  &lt;strong&gt;Regularization(正则化)&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Dropout      &lt;/li&gt;
-&lt;li&gt;Denoising（目的使NN面对含有一点noise的输入也能输出正确结果）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;难以得到最优解&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;谨慎的初始化可以避免陷入局部最优解。例如：Pre-Training&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;计算复杂度大&lt;/p&gt;
-&lt;p&gt;  GPU计算&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;最关键的点：&lt;strong&gt;Regularization&lt;/strong&gt;和&lt;strong&gt;Initialization&lt;/strong&gt;。&lt;/p&gt;
-&lt;h1 id=&quot;Autoencoder&quot;&gt;&lt;a href=&quot;#Autoencoder&quot; class=&quot;headerlink&quot; title=&quot;Autoencoder&quot;&gt;&lt;/a&gt;Autoencoder&lt;/h1&gt;&lt;p&gt;把权重（weights）看做特征转换。那么一个好的权重（good-weights）就意味着能提取输入向量的关键特征。那么样的话，我们甚至可以通过关键特征重新拼凑出最初的输入向量。而我们正是需要这样的 good-weights ！&lt;/p&gt;
-&lt;p&gt;考虑只有一层隐层的神经网络，且输入和输出层都是 $d$ 维，隐层是 $ \tilde{d} $。如下图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://noclyt.qiniudn.com/IPNNet.png&quot; alt=&quot;ip-nnet&quot;&gt;&lt;/p&gt;
-&lt;p&gt;$w_{ij}^{(1)}$: encoding weights.  $w_{ij}^{(1)}$:decoding weights. 目标函数 $ g(\mathbf{x}) \approx \mathbf{x}$ &lt;/p&gt;
-&lt;p&gt;我们称这样的神经网络是 &lt;strong&gt;Information-Preserving Neural Network&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;性质：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;一般来说有 $ tilde{d} &amp;lt; d&lt;/strong&gt; &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;限制 $ w_{ij}^{(1)} = w_{ji}^{(2)}$ &lt;/strong&gt; ，作为一种 Regularization（正则化）方式。&lt;/li&gt;
-&lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;Pre-Trainning&quot;&gt;&lt;a href=&quot;#Pre-Trainning&quot; class=&quot;headerlink&quot; title=&quot;Pre-Trainning&quot;&gt;&lt;/a&gt;Pre-Trainning&lt;/h1&gt;&lt;p&gt;前面说过，权重初始化影响着最终解陷入局部最优解，可以通过 Pre-Trainning 减少这种影响。&lt;/p&gt;
-&lt;h2 id=&quot;思想&quot;&gt;&lt;a href=&quot;#思想&quot; class=&quot;headerlink&quot; title=&quot;思想&quot;&gt;&lt;/a&gt;思想&lt;/h2&gt;&lt;p&gt;结合 Autoencoder 的思想：好的权重意味着提取关键特征，并可以进行复原。&lt;/p&gt;
-&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;p&gt;对于一个多层的神经网络，我们由低到高依次对每层进行 autoencoder 的训练。如图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://noclyt.qiniudn.com/pre-training.png&quot; alt=&quot;pre-train&quot;&gt; &lt;/p&gt;
-&lt;h1 id=&quot;Regularization-in-Deep-Learning&quot;&gt;&lt;a href=&quot;#Regularization-in-Deep-Learning&quot; class=&quot;headerlink&quot; title=&quot;Regularization in Deep Learning&quot;&gt;&lt;/a&gt;Regularization in Deep Learning&lt;/h1&gt;&lt;p&gt;随着神经元的增多，神经网络的模型复杂度也随之增加。因此在模型中加入 Regularization（正则化）是必不可少的。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;限制模型复杂度&lt;/li&gt;
-&lt;li&gt;削弱权重值&lt;/li&gt;
-&lt;li&gt;提前停止&lt;/li&gt;
-&lt;li&gt;Denosing&lt;/li&gt;
-&lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;Denosing&quot;&gt;&lt;a href=&quot;#Denosing&quot; class=&quot;headerlink&quot; title=&quot;Denosing&quot;&gt;&lt;/a&gt;Denosing&lt;/h1&gt;&lt;p&gt;问题：一般的学习问题中，nosing对训练的正确性影响很大。&lt;/p&gt;
-&lt;p&gt;思想：学习得到一个新的分类器，用于&lt;strong&gt;“辨别”&lt;/strong&gt;是否包含杂讯的数据（并转化）。&lt;/p&gt;
-&lt;p&gt;方法：对正常的数据 $\mathbf{x}$，人工加上noise产生 $\mathbf{\tilde{x}}$ 。学习数据 $ (\mathbf{\tilde{X}}, Y=\mathbf{X}) $ 。这样就可以得到一个新的分类器，这个分类器可以用于将包含杂讯的$\mathbf{\tilde{x}}$ 转化为“正确的”$\mathbf{x}$。&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<h1 id="神经网络的关键问题"><a href="#神经网络的关键问题" class="headerlink" title="神经网络的关键问题"></a>神经网络的关键问题</h1><ul><li><p>网络结构</p><p>  <strong>具体问题具体分析</strong></p><p>  例如：数字图像处理中得Convolutional NNet(卷积神经网络)是把相邻的像素<em>相关联</em>，距离远的则<em>无关联</em>。</p></li><li><p>高模型复杂度</p><p>  <strong>Regularization(正则化)</strong></p><ol><li>Dropout      </li><li>Denoising（目的使NN面对含有一点noise的输入也能输出正确结果）</li></ol></li><li><p>难以得到最优解</p><ul><li>谨慎的初始化可以避免陷入局部最优解。例如：Pre-Training</li></ul></li><li><p>计算复杂度大</p><p>  GPU计算</p></li></ul><p>最关键的点：<strong>Regularization</strong>和<strong>Initialization</strong>。</p><h1 id="Autoencoder"><a href="#Autoencoder" class="headerlink" title="Autoencoder"></a>Autoencoder</h1><p>把权重（weights）看做特征转换。那么一个好的权重（good-weights）就意味着能提取输入向量的关键特征。那么样的话，我们甚至可以通过关键特征重新拼凑出最初的输入向量。而我们正是需要这样的 good-weights ！</p><p>考虑只有一层隐层的神经网络，且输入和输出层都是 $d$ 维，隐层是 $ \tilde{d} $。如下图</p><p><img src="http://noclyt.qiniudn.com/IPNNet.png" alt="ip-nnet"></p><p>$w_{ij}^{(1)}$: encoding weights.  $w_{ij}^{(1)}$:decoding weights. 目标函数 $ g(\mathbf{x}) \approx \mathbf{x}$ </p><p>我们称这样的神经网络是 <strong>Information-Preserving Neural Network</strong></p><p>性质：</p><ul><li><strong>一般来说有 $ tilde{d} &lt; d</strong> </li><li><strong>限制 $ w_{ij}^{(1)} = w_{ji}^{(2)}$ </strong> ，作为一种 Regularization（正则化）方式。</li><li>…</li></ul><h1 id="Pre-Trainning"><a href="#Pre-Trainning" class="headerlink" title="Pre-Trainning"></a>Pre-Trainning</h1><p>前面说过，权重初始化影响着最终解陷入局部最优解，可以通过 Pre-Trainning 减少这种影响。</p><h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p>结合 Autoencoder 的思想：好的权重意味着提取关键特征，并可以进行复原。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>对于一个多层的神经网络，我们由低到高依次对每层进行 autoencoder 的训练。如图：</p><p><img src="http://noclyt.qiniudn.com/pre-training.png" alt="pre-train"> </p><h1 id="Regularization-in-Deep-Learning"><a href="#Regularization-in-Deep-Learning" class="headerlink" title="Regularization in Deep Learning"></a>Regularization in Deep Learning</h1><p>随着神经元的增多，神经网络的模型复杂度也随之增加。因此在模型中加入 Regularization（正则化）是必不可少的。</p><ul><li>限制模型复杂度</li><li>削弱权重值</li><li>提前停止</li><li>Denosing</li><li>…</li></ul><h1 id="Denosing"><a href="#Denosing" class="headerlink" title="Denosing"></a>Denosing</h1><p>问题：一般的学习问题中，nosing对训练的正确性影响很大。</p><p>思想：学习得到一个新的分类器，用于<strong>“辨别”</strong>是否包含杂讯的数据（并转化）。</p><p>方法：对正常的数据 $\mathbf{x}$，人工加上noise产生 $\mathbf{\tilde{x}}$ 。学习数据 $ (\mathbf{\tilde{X}}, Y=\mathbf{X}) $ 。这样就可以得到一个新的分类器，这个分类器可以用于将包含杂讯的$\mathbf{\tilde{x}}$ 转化为“正确的”$\mathbf{x}$。</p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;神经网络的关键问题&quot;&gt;&lt;a href=&quot;#神经网络的关键问题&quot; class=&quot;headerlink&quot; title=&quot;神经网络的关键问题&quot;&gt;&lt;/a&gt;神经网络的关键问题&lt;/h1&gt;&lt;ul&gt;
+      
+      
+        &lt;h1 id=&quot;神经网络的关键问题&quot;&gt;&lt;a href=&quot;#神经网络的关键问题&quot; class=&quot;headerlink&quot; title=&quot;神经网络的关键问题&quot;&gt;&lt;/a&gt;神经网络的关键问题&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;网络结构&lt;/p&gt;
 &lt;p&gt;  &lt;strong&gt;具体问题具体分析&lt;/s
+      
     
     </summary>
     
@@ -297,42 +158,21 @@
     <title>顺势而为</title>
     <link href="http://noclyt.github.io/2015/02/12/notitle1/"/>
     <id>http://noclyt.github.io/2015/02/12/notitle1/</id>
-    <published>2015-02-12T02:24:26.000Z</published>
+    <published>2015-02-12T15:24:26.000Z</published>
     <updated>2015-02-12T07:03:50.000Z</updated>
     
-    <content type="html">&lt;p&gt;前几天回学校参加数学建模了，真是累觉不爱。&lt;/p&gt;
-&lt;p&gt;先说对数学建模这个比赛吧。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;首先这是一门比较综合性的比赛。最强调的应该是数学和统计。&lt;/li&gt;
-&lt;li&gt;这更适合高手之间的比赛。因为每道题没有一个标准答案，具有很广的知识面的牛人更能给出更完美的答案，这才是比赛的魅力。&lt;/li&gt;
-&lt;li&gt;主观性很强的比赛。最终的比赛结果是有评委（人）给出的，既然是人打分就难逃偏见。而在选手看来，更像一个黑盒打分，无法得知“为什么给我这么多分”。更何况这次美赛全世界有7000+（？）份论文。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;我上面这么说并不是想抨击数学建模比赛，而是觉得自己完全不适合这个比赛：一是自己太菜，没办法创造吸引人的解法（我觉得这是一个比赛能让你真正快乐的根本）；二是对主观性的比赛不太感冒。&lt;/p&gt;
-&lt;p&gt;正如这次比赛自己也是打了酱油一样：用matplotlib花了几张图，用LaTeX排了一下版。&lt;/p&gt;
-&lt;p&gt;在这里十分感谢@栾思焘的邀请，让我抱了一下大腿。其实最应该感谢@栾思焘的不是带我做比赛，而是能和@LYX在一起比赛。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;这篇文章的中心应该是@LYX。&lt;/p&gt;
-&lt;p&gt;至少从现在看来，前景看来似乎并不是明朗的。&lt;/p&gt;
-&lt;p&gt;比完赛一起去吃饭看电影，我突然有种想吻她的冲动，结果在昏暗的放映厅还是被她躲过去了。当时似乎太困了，想不到怎么去面对下面尴尬的状况。不过两个人似乎都心照不宣的没有提刚才的事情。&lt;/p&gt;
-&lt;p&gt;从电影院出来之后，我是打算去超市买盒巧克力送她啦。（反正当时情况比较特殊，我只能带着她去超市）然后把她骗到超市，要买巧克力。她拉着我怎么也不要T_T。僵持了了好久，最终还是拗不过她，买了两小盒m&amp;amp;m出来了。两个人一人一盒，我拿的是蓝色的。&lt;/p&gt;
-&lt;p&gt;说实话我当时挺伤心的，因为我想起一些以前的事情。以前李悦也是对我送的东西百般推脱，后来才知道她是觉得两个人本来就不合适，又何必接受别人的礼物。想到这里，我不禁悲伤起来。&lt;/p&gt;
-&lt;p&gt;从超市出来之后，我表现得比较失落，她问我是不是觉得她没有我想象中的那么可爱了。我说：“不是。”确实不是，我反而觉得她越发可爱了。我想告诉她，我此时多么想拥抱她。可惜我没说，也没有去做。我承认我是不敢，因为我怕伤害，我怕一时的冲动会失去她。&lt;/p&gt;
-&lt;p&gt;身边有很多恋爱案例，奈何依旧改变不了自己“羞怯”的性格。现在想想这并非坏事。大概每个人对“拥有”的定义不同，而我知道自己需要的一个长期而稳定的关系。而一时的“欢愉”（假设我真的趁机抱了她，吻了她）并不能带来什么帮助。&lt;/p&gt;
-&lt;p&gt;我以为自己经历过一次恋爱后会变得成熟。但事实还是打破了我的认识，我见到她时依旧会不知所措，依旧会像小孩子一样吃醋。听到她不自觉的卖萌时，心都快要融化掉。或许，我就是那种喜欢把自己的幼稚面展现给恋人的人。&lt;/p&gt;
-&lt;p&gt;可以称作是“恋人”吗？我又在自作多情了。我承认自己对她一次次的婉拒有一些懊恼。但毕竟大家还不是很熟，不是吗？我们相识于2014.12.5，距今为止不过两个月有余。我相信她是在用时间来检验冲动，如若真是如此，我自然欣然接受。&lt;/p&gt;
-&lt;p&gt;我有时会感到迷茫，进而难免急功近利。这样确实是不好的。确实留给自己一些时间，好好反省自己，了解对方。&lt;/p&gt;
-&lt;p&gt;在知乎上看到一篇文章，讲究顺势而生。有人会说逆势而改变历史，但这不过是一句马后炮。大多逆势者亡矣。我说不上来什么叫做“势”，我只能告诉自己：看不懂的不能称为势，令自己迷惑的不能称为势，感受不到的不能称为势。顺从命运更不能称为顺势。&lt;/p&gt;
-&lt;p&gt;顺势而为，听起来更像一个哲学性的方法。那篇文章讲：两个人没有确定恋人关系更不要在乎什么“情人节”，而是应珍惜在一起的每一天，每天过的就像情人节一样。此为顺势。&lt;/p&gt;
-&lt;p&gt;长这么大了，也应该明白，属于你自己的东西，努力后会有好结果的。&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>前几天回学校参加数学建模了，真是累觉不爱。</p><p>先说对数学建模这个比赛吧。</p><ol><li>首先这是一门比较综合性的比赛。最强调的应该是数学和统计。</li><li>这更适合高手之间的比赛。因为每道题没有一个标准答案，具有很广的知识面的牛人更能给出更完美的答案，这才是比赛的魅力。</li><li>主观性很强的比赛。最终的比赛结果是有评委（人）给出的，既然是人打分就难逃偏见。而在选手看来，更像一个黑盒打分，无法得知“为什么给我这么多分”。更何况这次美赛全世界有7000+（？）份论文。</li></ol><p>我上面这么说并不是想抨击数学建模比赛，而是觉得自己完全不适合这个比赛：一是自己太菜，没办法创造吸引人的解法（我觉得这是一个比赛能让你真正快乐的根本）；二是对主观性的比赛不太感冒。</p><p>正如这次比赛自己也是打了酱油一样：用matplotlib花了几张图，用LaTeX排了一下版。</p><p>在这里十分感谢@栾思焘的邀请，让我抱了一下大腿。其实最应该感谢@栾思焘的不是带我做比赛，而是能和@LYX在一起比赛。</p><hr><p>这篇文章的中心应该是@LYX。</p><p>至少从现在看来，前景看来似乎并不是明朗的。</p><p>比完赛一起去吃饭看电影，我突然有种想吻她的冲动，结果在昏暗的放映厅还是被她躲过去了。当时似乎太困了，想不到怎么去面对下面尴尬的状况。不过两个人似乎都心照不宣的没有提刚才的事情。</p><p>从电影院出来之后，我是打算去超市买盒巧克力送她啦。（反正当时情况比较特殊，我只能带着她去超市）然后把她骗到超市，要买巧克力。她拉着我怎么也不要T_T。僵持了了好久，最终还是拗不过她，买了两小盒m&amp;m出来了。两个人一人一盒，我拿的是蓝色的。</p><p>说实话我当时挺伤心的，因为我想起一些以前的事情。以前李悦也是对我送的东西百般推脱，后来才知道她是觉得两个人本来就不合适，又何必接受别人的礼物。想到这里，我不禁悲伤起来。</p><p>从超市出来之后，我表现得比较失落，她问我是不是觉得她没有我想象中的那么可爱了。我说：“不是。”确实不是，我反而觉得她越发可爱了。我想告诉她，我此时多么想拥抱她。可惜我没说，也没有去做。我承认我是不敢，因为我怕伤害，我怕一时的冲动会失去她。</p><p>身边有很多恋爱案例，奈何依旧改变不了自己“羞怯”的性格。现在想想这并非坏事。大概每个人对“拥有”的定义不同，而我知道自己需要的一个长期而稳定的关系。而一时的“欢愉”（假设我真的趁机抱了她，吻了她）并不能带来什么帮助。</p><p>我以为自己经历过一次恋爱后会变得成熟。但事实还是打破了我的认识，我见到她时依旧会不知所措，依旧会像小孩子一样吃醋。听到她不自觉的卖萌时，心都快要融化掉。或许，我就是那种喜欢把自己的幼稚面展现给恋人的人。</p><p>可以称作是“恋人”吗？我又在自作多情了。我承认自己对她一次次的婉拒有一些懊恼。但毕竟大家还不是很熟，不是吗？我们相识于2014.12.5，距今为止不过两个月有余。我相信她是在用时间来检验冲动，如若真是如此，我自然欣然接受。</p><p>我有时会感到迷茫，进而难免急功近利。这样确实是不好的。确实留给自己一些时间，好好反省自己，了解对方。</p><p>在知乎上看到一篇文章，讲究顺势而生。有人会说逆势而改变历史，但这不过是一句马后炮。大多逆势者亡矣。我说不上来什么叫做“势”，我只能告诉自己：看不懂的不能称为势，令自己迷惑的不能称为势，感受不到的不能称为势。顺从命运更不能称为顺势。</p><p>顺势而为，听起来更像一个哲学性的方法。那篇文章讲：两个人没有确定恋人关系更不要在乎什么“情人节”，而是应珍惜在一起的每一天，每天过的就像情人节一样。此为顺势。</p><p>长这么大了，也应该明白，属于你自己的东西，努力后会有好结果的。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;前几天回学校参加数学建模了，真是累觉不爱。&lt;/p&gt;
+      
+      
+        &lt;p&gt;前几天回学校参加数学建模了，真是累觉不爱。&lt;/p&gt;
 &lt;p&gt;先说对数学建模这个比赛吧。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;首先这是一门比较综合性的比赛。最强调的应该是数学和统计。&lt;/li&gt;
 &lt;li&gt;这更适合高手之间的比赛。因为每道题没有一个标准答案，具有很广的知识面的牛人更能给出更完
+      
     
     </summary>
     
@@ -343,46 +183,18 @@
     <title>LaTeX学习笔记</title>
     <link href="http://noclyt.github.io/2015/02/02/latex-notes/"/>
     <id>http://noclyt.github.io/2015/02/02/latex-notes/</id>
-    <published>2015-02-02T15:05:08.000Z</published>
+    <published>2015-02-03T04:05:08.000Z</published>
     <updated>2015-02-12T09:38:44.000Z</updated>
     
-    <content type="html">&lt;p&gt;（先挖一个坑，自己慢慢把LaTeX的学习笔记更新到这里）&lt;/p&gt;
-&lt;h1 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h1&gt;&lt;h5 id=&quot;代码中的空格&quot;&gt;&lt;a href=&quot;#代码中的空格&quot; class=&quot;headerlink&quot; title=&quot;代码中的空格&quot;&gt;&lt;/a&gt;代码中的空格&lt;/h5&gt;&lt;p&gt;在代码中输入的空格和回车，在排版时的表现。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;一个回车的等于一个空格&lt;/li&gt;
-&lt;li&gt;多少个空格都等价于一个空格&lt;/li&gt;
-&lt;li&gt;两个回车作用是分段&lt;/li&gt;
-&lt;li&gt;两个及更多个回车等价于两个回车&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h5 id=&quot;排版中的空格&quot;&gt;&lt;a href=&quot;#排版中的空格&quot; class=&quot;headerlink&quot; title=&quot;排版中的空格&quot;&gt;&lt;/a&gt;排版中的空格&lt;/h5&gt;&lt;p&gt;有时候我们需要在排版时控制空格的数量、长度：&lt;br&gt;…&lt;/p&gt;
-&lt;h5 id=&quot;各类LaTeX文件&quot;&gt;&lt;a href=&quot;#各类LaTeX文件&quot; class=&quot;headerlink&quot; title=&quot;各类LaTeX文件&quot;&gt;&lt;/a&gt;各类LaTeX文件&lt;/h5&gt;&lt;p&gt;介绍不同扩展名的文件&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;.tex&lt;/code&gt; LaTeX或TeX源文件&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.sty&lt;/code&gt; LaTeX宏包文件。可使用\usepackage加载到你的LaTeX文件中&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.dtx&lt;/code&gt; 文档化TeX文件。LaTeX宏包发布的主要格式。通过处理一个.dtx文件就可以得到该LaTeX宏包中所包括的宏代码文档。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.ins&lt;/code&gt; 为相应的.dtx文件的安装文件。如果你在网上下载一个LaTeX宏包，你通常会发现有一个 .dtx 和一个 .ins 文件。使用LaTeX对 .ins 文件进行处理，可以从 &lt;strong&gt;.dtx&lt;/strong&gt; 文件中提取宏包。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;当编译LaTeX源文件后，会得到以下文件：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;.dvi&lt;/code&gt; 与设备无关文件。这是LaTeX编译运行的主要结果。你可以使用DVI预览器预览其内容，或者使用像 dvips 这样的应用程序输出到打印机。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.log&lt;/code&gt; 上次编译运行的日志文件。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.toc&lt;/code&gt; 储存了所有章节标题。该文件将在下次编译运行时读入并生成目录。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.aux&lt;/code&gt; 另一种用来向下次编译运行传递信息的辅助文件。除了其他信息外, .aux 文件通常包含交叉引用信息。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.idx&lt;/code&gt; 如果你的文件包含有索引，LaTeX使用此文件储存所有的索引词条。此文件需要使用 &lt;code&gt;makeinde&lt;/code&gt; 处理。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.lof&lt;/code&gt; 类似 .toc 文件，可生成图形目录。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.lot&lt;/code&gt; 类似 .toc 文件，可生成表格目录。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;列出我觉得很不错的学习链接：&quot;&gt;&lt;a href=&quot;#列出我觉得很不错的学习链接：&quot; class=&quot;headerlink&quot; title=&quot;列出我觉得很不错的学习链接：&quot;&gt;&lt;/a&gt;列出我觉得很不错的学习链接：&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;西南林业大学的Emacs+LaTeX教程&lt;/a&gt; 评价：特别棒！手把手教你用Emacs+AucTex写LaTeX，主要学习了AucTex的快捷键和LaTeX基本语法。写起来效率真是高啊。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.renren.com/blog/339175058/893600385?bfrom=01020110200#nogo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;E喵的LaTeX新手入门教程&lt;/a&gt; 评价：新手向教程，和我目的一样都是为了数学建模排版而学LaTeX。&lt;/li&gt;
-&lt;/ol&gt;
-</content>
+    <content type="html"><![CDATA[<p>（先挖一个坑，自己慢慢把LaTeX的学习笔记更新到这里）</p><h1 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h1><h5 id="代码中的空格"><a href="#代码中的空格" class="headerlink" title="代码中的空格"></a>代码中的空格</h5><p>在代码中输入的空格和回车，在排版时的表现。</p><ol><li>一个回车的等于一个空格</li><li>多少个空格都等价于一个空格</li><li>两个回车作用是分段</li><li>两个及更多个回车等价于两个回车</li></ol><h5 id="排版中的空格"><a href="#排版中的空格" class="headerlink" title="排版中的空格"></a>排版中的空格</h5><p>有时候我们需要在排版时控制空格的数量、长度：<br>…</p><h5 id="各类LaTeX文件"><a href="#各类LaTeX文件" class="headerlink" title="各类LaTeX文件"></a>各类LaTeX文件</h5><p>介绍不同扩展名的文件</p><ol><li><code>.tex</code> LaTeX或TeX源文件</li><li><code>.sty</code> LaTeX宏包文件。可使用\usepackage加载到你的LaTeX文件中</li><li><code>.dtx</code> 文档化TeX文件。LaTeX宏包发布的主要格式。通过处理一个.dtx文件就可以得到该LaTeX宏包中所包括的宏代码文档。</li><li><code>.ins</code> 为相应的.dtx文件的安装文件。如果你在网上下载一个LaTeX宏包，你通常会发现有一个 .dtx 和一个 .ins 文件。使用LaTeX对 .ins 文件进行处理，可以从 <strong>.dtx</strong> 文件中提取宏包。</li></ol><p>当编译LaTeX源文件后，会得到以下文件：</p><ol><li><code>.dvi</code> 与设备无关文件。这是LaTeX编译运行的主要结果。你可以使用DVI预览器预览其内容，或者使用像 dvips 这样的应用程序输出到打印机。</li><li><code>.log</code> 上次编译运行的日志文件。</li><li><code>.toc</code> 储存了所有章节标题。该文件将在下次编译运行时读入并生成目录。</li><li><code>.aux</code> 另一种用来向下次编译运行传递信息的辅助文件。除了其他信息外, .aux 文件通常包含交叉引用信息。</li><li><code>.idx</code> 如果你的文件包含有索引，LaTeX使用此文件储存所有的索引词条。此文件需要使用 <code>makeinde</code> 处理。</li><li><code>.lof</code> 类似 .toc 文件，可生成图形目录。</li><li><code>.lot</code> 类似 .toc 文件，可生成表格目录。</li></ol><hr><h2 id="列出我觉得很不错的学习链接："><a href="#列出我觉得很不错的学习链接：" class="headerlink" title="列出我觉得很不错的学习链接："></a>列出我觉得很不错的学习链接：</h2><ol><li><a href="http://" target="_blank" rel="noopener">西南林业大学的Emacs+LaTeX教程</a> 评价：特别棒！手把手教你用Emacs+AucTex写LaTeX，主要学习了AucTex的快捷键和LaTeX基本语法。写起来效率真是高啊。</li><li><a href="http://blog.renren.com/blog/339175058/893600385?bfrom=01020110200#nogo" target="_blank" rel="noopener">E喵的LaTeX新手入门教程</a> 评价：新手向教程，和我目的一样都是为了数学建模排版而学LaTeX。</li></ol>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;（先挖一个坑，自己慢慢把LaTeX的学习笔记更新到这里）&lt;/p&gt;
+      
+      
+        &lt;p&gt;（先挖一个坑，自己慢慢把LaTeX的学习笔记更新到这里）&lt;/p&gt;
 &lt;h1 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h1&gt;&lt;h5 id=&quot;代码中的空格&quot;&gt;&lt;a href=&quot;#代码中的空格&quot;
+      
     
     </summary>
     
@@ -395,61 +207,20 @@
     <title>用Emacs优雅的抒写markdown</title>
     <link href="http://noclyt.github.io/2015/02/01/markdown-emacs-pandoc/"/>
     <id>http://noclyt.github.io/2015/02/01/markdown-emacs-pandoc/</id>
-    <published>2015-02-01T15:04:12.000Z</published>
+    <published>2015-02-02T04:04:12.000Z</published>
     <updated>2015-02-01T15:45:54.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;啥？&quot;&gt;&lt;a href=&quot;#啥？&quot; class=&quot;headerlink&quot; title=&quot;啥？&quot;&gt;&lt;/a&gt;啥？&lt;/h1&gt;&lt;p&gt;作为一个Emacser肯定是用Emacs写markdown的。&lt;/p&gt;
-&lt;p&gt;我觉得称得上“优雅”需要两点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;编辑器可以提供自动补全，关键字高亮，模板补全&lt;/li&gt;
-&lt;li&gt;快捷键预览markdown文件（输出html、pdf格式都可以）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;既然想优雅的写markdown，我们就需要下面两个插件：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;markdown-mode.el&lt;/li&gt;
-&lt;li&gt;Pandoc&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;markdown-mode-el&quot;&gt;&lt;a href=&quot;#markdown-mode-el&quot; class=&quot;headerlink&quot; title=&quot;markdown-mode.el&quot;&gt;&lt;/a&gt;markdown-mode.el&lt;/h1&gt;&lt;p&gt;这是Emacs的关于markdown的插件，可以通过elpa直接安装。&lt;/p&gt;
-&lt;p&gt;现已发现的优点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;关键字高亮&lt;/li&gt;
-&lt;li&gt;快捷键自动补全（例如Org-mode的Alt+Enter功能）&lt;/li&gt;
-&lt;li&gt;快速模板、自定义模板（再也不用担心忘了怎么插入图片了…）&lt;/li&gt;
-&lt;li&gt;待探索…&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;Pandoc&quot;&gt;&lt;a href=&quot;#Pandoc&quot; class=&quot;headerlink&quot; title=&quot;Pandoc&quot;&gt;&lt;/a&gt;Pandoc&lt;/h1&gt;&lt;p&gt;让我们先看一下Pandoc的wiki:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Pandoc是由John MacFarlane开发的标记语言转换工具，可实现不同标记语言间的格式转换，堪称该领域中的“瑞士军刀”。Pandoc使用Haskell语言编写，以命令行形式实现与用户的交互，可支持多种操作系统；Pandoc采用GNU GPL授权协议发布，属于自由软件。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;所以我们使用Pandoc的目的是：&lt;strong&gt;直接预览一个markdown文件&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-安装Pandoc&quot;&gt;&lt;a href=&quot;#1-安装Pandoc&quot; class=&quot;headerlink&quot; title=&quot;1. 安装Pandoc&quot;&gt;&lt;/a&gt;1. 安装Pandoc&lt;/h3&gt;&lt;p&gt;对于Mac，现在可以直接通过Homebrew安装Pandoc&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$ brew install pandoc&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;2-配置预览快捷键命令&quot;&gt;&lt;a href=&quot;#2-配置预览快捷键命令&quot; class=&quot;headerlink&quot; title=&quot;2. 配置预览快捷键命令&quot;&gt;&lt;/a&gt;2. 配置预览快捷键命令&lt;/h3&gt;&lt;p&gt;Emacs的mardown-mode自带预览快捷键:&lt;code&gt;C-c C-c p&lt;/code&gt;。既然我们使用pandoc来预览，就需要修改一下快捷键对应的执行命令：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Emacs菜单栏”option” -&amp;gt; “Customize Emacs” -&amp;gt; “Specific Option” -&amp;gt; 输入 mardown-command&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;然后再文本框里输入预览快捷键&lt;code&gt;C-c C-c p&lt;/code&gt;对应执行的命令（默认是&lt;code&gt;markdown&lt;/code&gt;）：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;pandoc -f markdown -t html -s –mathjax –highlight-style pygments&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;为什么命令长这个样子？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;-f mardown -t html&lt;/code&gt; 表示把一个mardown文件输出为一个html文件，效果就是在默认浏览器打开一个网页进行预览markdown文件的内容&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--mathjax&lt;/code&gt; 支持LaTeX数学公式&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--highlight-stype pygments&lt;/code&gt; 使用pygments支持语法高亮&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;3-最终效果&quot;&gt;&lt;a href=&quot;#3-最终效果&quot; class=&quot;headerlink&quot; title=&quot;3. 最终效果&quot;&gt;&lt;/a&gt;3. 最终效果&lt;/h3&gt;&lt;p&gt;打开Emacs编辑一个markdown文件，按&lt;code&gt;C-c C-c p&lt;/code&gt;直接在浏览器中预览markdown文件。&lt;/p&gt;
-&lt;h1 id=&quot;结语&quot;&gt;&lt;a href=&quot;#结语&quot; class=&quot;headerlink&quot; title=&quot;结语&quot;&gt;&lt;/a&gt;结语&lt;/h1&gt;&lt;p&gt;终于可以优雅的写markdown文件了。还要再学一下markdown-mode的配置和Pandoc的参数，这样用起来会更顺手。我会把一些使用心得更新在这里。&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<h1 id="啥？"><a href="#啥？" class="headerlink" title="啥？"></a>啥？</h1><p>作为一个Emacser肯定是用Emacs写markdown的。</p><p>我觉得称得上“优雅”需要两点：</p><ol><li>编辑器可以提供自动补全，关键字高亮，模板补全</li><li>快捷键预览markdown文件（输出html、pdf格式都可以）</li></ol><p>既然想优雅的写markdown，我们就需要下面两个插件：</p><ol><li>markdown-mode.el</li><li>Pandoc</li></ol><h1 id="markdown-mode-el"><a href="#markdown-mode-el" class="headerlink" title="markdown-mode.el"></a>markdown-mode.el</h1><p>这是Emacs的关于markdown的插件，可以通过elpa直接安装。</p><p>现已发现的优点：</p><ol><li>关键字高亮</li><li>快捷键自动补全（例如Org-mode的Alt+Enter功能）</li><li>快速模板、自定义模板（再也不用担心忘了怎么插入图片了…）</li><li>待探索…</li></ol><h1 id="Pandoc"><a href="#Pandoc" class="headerlink" title="Pandoc"></a>Pandoc</h1><p>让我们先看一下Pandoc的wiki:</p><blockquote><p>Pandoc是由John MacFarlane开发的标记语言转换工具，可实现不同标记语言间的格式转换，堪称该领域中的“瑞士军刀”。Pandoc使用Haskell语言编写，以命令行形式实现与用户的交互，可支持多种操作系统；Pandoc采用GNU GPL授权协议发布，属于自由软件。</p></blockquote><p>所以我们使用Pandoc的目的是：<strong>直接预览一个markdown文件</strong></p><h3 id="1-安装Pandoc"><a href="#1-安装Pandoc" class="headerlink" title="1. 安装Pandoc"></a>1. 安装Pandoc</h3><p>对于Mac，现在可以直接通过Homebrew安装Pandoc</p><blockquote><p>$ brew install pandoc</p></blockquote><h3 id="2-配置预览快捷键命令"><a href="#2-配置预览快捷键命令" class="headerlink" title="2. 配置预览快捷键命令"></a>2. 配置预览快捷键命令</h3><p>Emacs的mardown-mode自带预览快捷键:<code>C-c C-c p</code>。既然我们使用pandoc来预览，就需要修改一下快捷键对应的执行命令：</p><blockquote><p>Emacs菜单栏”option” -&gt; “Customize Emacs” -&gt; “Specific Option” -&gt; 输入 mardown-command</p></blockquote><p>然后再文本框里输入预览快捷键<code>C-c C-c p</code>对应执行的命令（默认是<code>markdown</code>）：</p><blockquote><p>pandoc -f markdown -t html -s –mathjax –highlight-style pygments</p></blockquote><p>为什么命令长这个样子？</p><ol><li><code>-f mardown -t html</code> 表示把一个mardown文件输出为一个html文件，效果就是在默认浏览器打开一个网页进行预览markdown文件的内容</li><li><code>--mathjax</code> 支持LaTeX数学公式</li><li><code>--highlight-stype pygments</code> 使用pygments支持语法高亮</li></ol><h3 id="3-最终效果"><a href="#3-最终效果" class="headerlink" title="3. 最终效果"></a>3. 最终效果</h3><p>打开Emacs编辑一个markdown文件，按<code>C-c C-c p</code>直接在浏览器中预览markdown文件。</p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>终于可以优雅的写markdown文件了。还要再学一下markdown-mode的配置和Pandoc的参数，这样用起来会更顺手。我会把一些使用心得更新在这里。</p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;啥？&quot;&gt;&lt;a href=&quot;#啥？&quot; class=&quot;headerlink&quot; title=&quot;啥？&quot;&gt;&lt;/a&gt;啥？&lt;/h1&gt;&lt;p&gt;作为一个Emacser肯定是用Emacs写markdown的。&lt;/p&gt;
+      
+      
+        &lt;h1 id=&quot;啥？&quot;&gt;&lt;a href=&quot;#啥？&quot; class=&quot;headerlink&quot; title=&quot;啥？&quot;&gt;&lt;/a&gt;啥？&lt;/h1&gt;&lt;p&gt;作为一个Emacser肯定是用Emacs写markdown的。&lt;/p&gt;
 &lt;p&gt;我觉得称得上“优雅”需要两点：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;编辑
+      
     
     </summary>
     
@@ -466,24 +237,18 @@
     <title>Github上的Hexo博客绑定个性域名</title>
     <link href="http://noclyt.github.io/2014/11/24/Hexo-Github-domain-name/"/>
     <id>http://noclyt.github.io/2014/11/24/Hexo-Github-domain-name/</id>
-    <published>2014-11-24T11:15:32.000Z</published>
+    <published>2014-11-25T00:15:32.000Z</published>
     <updated>2015-02-01T14:29:19.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;Godaddy注册一个域名&quot;&gt;&lt;a href=&quot;#Godaddy注册一个域名&quot; class=&quot;headerlink&quot; title=&quot;Godaddy注册一个域名&quot;&gt;&lt;/a&gt;Godaddy注册一个域名&lt;/h2&gt;&lt;p&gt;“论如何在Godaddy注册一个域名”&lt;/p&gt;
-&lt;h2 id=&quot;Godaddy域名绑定到DNSPod&quot;&gt;&lt;a href=&quot;#Godaddy域名绑定到DNSPod&quot; class=&quot;headerlink&quot; title=&quot;Godaddy域名绑定到DNSPod&quot;&gt;&lt;/a&gt;Godaddy域名绑定到DNSPod&lt;/h2&gt;&lt;p&gt;详见DNSPod官方帮助页面：&lt;a href=&quot;https://support.dnspod.cn/Kb/showarticle/tsid/42/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Godaddy注册商域名修改DNS地址&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;DNSPod上设置域名的DNS&quot;&gt;&lt;a href=&quot;#DNSPod上设置域名的DNS&quot; class=&quot;headerlink&quot; title=&quot;DNSPod上设置域名的DNS&quot;&gt;&lt;/a&gt;DNSPod上设置域名的DNS&lt;/h2&gt;&lt;p&gt;首先找到GitHub的两个IP地址：&lt;code&gt;192.30.252.153&lt;/code&gt;、 &lt;code&gt;192.30.252.154&lt;/code&gt;&lt;br&gt;然后在DNSPod设置域名，如下：&lt;br&gt;&lt;img src=&quot;http://noclyt.qiniudn.com/DNSpod设置.png&quot; alt=&quot;DNSpod&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;在Hexo博客设置CNAME&quot;&gt;&lt;a href=&quot;#在Hexo博客设置CNAME&quot; class=&quot;headerlink&quot; title=&quot;在Hexo博客设置CNAME&quot;&gt;&lt;/a&gt;在Hexo博客设置CNAME&lt;/h2&gt;&lt;p&gt;在博客源文件&lt;code&gt;./source&lt;/code&gt;下创建一个文件名是&lt;code&gt;CNAME&lt;/code&gt;的文本文件，该文件内容只有一行，就是你注册的域名。&lt;br&gt;例如:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;noclyt.com &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;然后把Hexo发布到Github。&lt;/p&gt;
-&lt;h2 id=&quot;完成&quot;&gt;&lt;a href=&quot;#完成&quot; class=&quot;headerlink&quot; title=&quot;完成&quot;&gt;&lt;/a&gt;完成&lt;/h2&gt;&lt;p&gt;因为服务器同步需要一会，所以访问出现Github的404页面是正常的。大约等十分钟即可。&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<h2 id="Godaddy注册一个域名"><a href="#Godaddy注册一个域名" class="headerlink" title="Godaddy注册一个域名"></a>Godaddy注册一个域名</h2><p>“论如何在Godaddy注册一个域名”</p><h2 id="Godaddy域名绑定到DNSPod"><a href="#Godaddy域名绑定到DNSPod" class="headerlink" title="Godaddy域名绑定到DNSPod"></a>Godaddy域名绑定到DNSPod</h2><p>详见DNSPod官方帮助页面：<a href="https://support.dnspod.cn/Kb/showarticle/tsid/42/" target="_blank" rel="noopener">Godaddy注册商域名修改DNS地址</a></p><h2 id="DNSPod上设置域名的DNS"><a href="#DNSPod上设置域名的DNS" class="headerlink" title="DNSPod上设置域名的DNS"></a>DNSPod上设置域名的DNS</h2><p>首先找到GitHub的两个IP地址：<code>192.30.252.153</code>、 <code>192.30.252.154</code><br>然后在DNSPod设置域名，如下：<br><img src="http://noclyt.qiniudn.com/DNSpod设置.png" alt="DNSpod"></p><h2 id="在Hexo博客设置CNAME"><a href="#在Hexo博客设置CNAME" class="headerlink" title="在Hexo博客设置CNAME"></a>在Hexo博客设置CNAME</h2><p>在博客源文件<code>./source</code>下创建一个文件名是<code>CNAME</code>的文本文件，该文件内容只有一行，就是你注册的域名。<br>例如:</p><blockquote><p>noclyt.com </p></blockquote><p>然后把Hexo发布到Github。</p><h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>因为服务器同步需要一会，所以访问出现Github的404页面是正常的。大约等十分钟即可。</p>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Godaddy注册一个域名&quot;&gt;&lt;a href=&quot;#Godaddy注册一个域名&quot; class=&quot;headerlink&quot; title=&quot;Godaddy注册一个域名&quot;&gt;&lt;/a&gt;Godaddy注册一个域名&lt;/h2&gt;&lt;p&gt;“论如何在Godaddy注册一个域名”&lt;/p&gt;
+      
+      
+        &lt;h2 id=&quot;Godaddy注册一个域名&quot;&gt;&lt;a href=&quot;#Godaddy注册一个域名&quot; class=&quot;headerlink&quot; title=&quot;Godaddy注册一个域名&quot;&gt;&lt;/a&gt;Godaddy注册一个域名&lt;/h2&gt;&lt;p&gt;“论如何在Godaddy注册一个域名”&lt;/p&gt;
 &lt;h
+      
     
     </summary>
     
@@ -503,19 +268,14 @@
     <published>2014-11-24T07:20:56.000Z</published>
     <updated>2014-11-24T07:20:56.000Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;trobuleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io
+      
     
     </summary>
     
